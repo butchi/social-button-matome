@@ -47,13 +47,13 @@
       <h1 data-heading-level="1">ソーシャルボタンまとめデモ</h1>
 
       <section>
-        <h1 data-heading-level="1">はじめに</h1>
+        <h1 data-heading-level="2">はじめに</h1>
         <p>本デモページは<a href="http://qiita.com/butchi_y/items/b365dc7ac4739ac9c74d">ソーシャルボタンまとめ - Qiita</a>に付随するものです。</p>
         <p class="notice">※なお、本サイトのコードは<time datetime="2016-04-11">2016年4月11日</time>の最新の情報です。</aside>
       </section>
 
       <section class="sec-popular">
-        <h1>稀によく使うソーシャルボタン</h1>
+        <h1 data-heading-level="2">代表的なソーシャルボタン</h1>
         <ul class="list-share-popular">
           <li class="item facebook">
             <p class="label">Facebook いいね！</p>
@@ -80,8 +80,8 @@
         </ul>
       </section>
 
-      <section class="sec-popular">
-        <h1>代表的なソーシャルボタン</h1>
+      <section class="sec-usual">
+        <h1 data-heading-level="2">稀によく使うソーシャルボタン</h1>
         <ul class="list-share-popular">
           <li class="item facebook-share">
             <p class="label">Facebook シェア</p>
@@ -116,52 +116,56 @@
         </ul>
       </section>
 
-      <section class="sec-inline-block">
-        <h1>inline-blockで整列</h1>
-        <ul class="list-share-inline-block">
-          <li class="item facebook">
-            <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-          </li>
-          <li class="item twitter">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-          </li>
-          <li class="item hatena">
-            <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-          </li>
-          <li class="item line">
-            <span>
-            <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
-            <script type="text/javascript">
-            new media_line_me.LineButton({"pc":false,"lang":"ja","type":"a"});
-            </script>
-            </span>
-          </li>
-        </ul>
-      </section>
+      <section class="sec-layout">
+        <h1 data-heading-level="2">レイアウト</h1>
 
-      <section class="sec-inline-block">
-        <h1>floatで整列</h1>
-        <ul class="list-share-float">
-          <li class="item facebook">
-            <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-          </li>
-          <li class="item twitter">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-          </li>
-          <li class="item hatena">
-            <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-          </li>
-          <li class="item line">
-            <span>
-            <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
-            <script type="text/javascript">
-            new media_line_me.LineButton({"pc":false,"lang":"ja","type":"a"});
-            </script>
-            </span>
-          </li>
-        </ul>
+        <section class="sec-inline-block">
+          <h1 data-heading-level="3">inline-blockで整列</h1>
+          <ul class="list-share-inline-block">
+            <li class="item facebook">
+              <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+            </li>
+            <li class="item twitter">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li class="item hatena">
+              <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+            </li>
+            <li class="item line">
+              <span>
+              <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
+              <script type="text/javascript">
+              new media_line_me.LineButton({"pc":false,"lang":"ja","type":"a"});
+              </script>
+              </span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="sec-inline-block">
+          <h1 data-heading-level="3">floatで整列</h1>
+          <ul class="list-share-float">
+            <li class="item facebook">
+              <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+            </li>
+            <li class="item twitter">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li class="item hatena">
+              <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+            </li>
+            <li class="item line">
+              <span>
+              <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
+              <script type="text/javascript">
+              new media_line_me.LineButton({"pc":false,"lang":"ja","type":"a"});
+              </script>
+              </span>
+            </li>
+          </ul>
+        </section>
       </section>
     </main>
   </div>
