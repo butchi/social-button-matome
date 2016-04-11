@@ -1,8 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+<head prefix="og: http://ogp.me/ns#">
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>ソーシャルボタンまとめ</title>
+
+  <meta name="description" content="ソーシャルボタンについてのまとめデモページです。"> <!-- contentを書き換える -->
+  <meta name="keywords" content="ソーシャルボタン,social button,シェアボタン,share,フェイスブック,facebook,ツイッター,twitter,ツイート,はてな,はてブ,hatena,hatena bookmark,line,ライン,送る"> <!-- contentを書き換える: 半角カンマ区切り -->
+  <meta name="author" content="岩淵 勇樹"> <!-- contentを書き換える -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=1">
+
+  <meta property="og:title" content="タイトルはソーシャルボタンまとめ"> <!-- contentを書き換える -->
+  <meta property="og:type" content="website"> <!-- contentを書き換える: article, book, profile, website のうちから -->
+  <meta property="og:url" content="http://butchi.github.io/social-button-matome/"> <!-- contentを書き換える: フルパスで -->
+  <meta property="og:image" content="http://butchi.github.io/social-button-matome/ogp.png"> <!-- contentを書き換える: フルパスで -->
+  <meta property="og:image:width" content="128"> <!-- contentを書き換える -->
+  <meta property="og:image:height" content="128"> <!-- contentを書き換える -->
+  <meta property="og:description" content="この記述はFacebookシェアで使われます。ソーシャルボタンについてのまとめデモページです。"> <!-- contentを書き換える -->
+  <meta property="og:site_name" content="サイト名はソーシャルボタンまとめ"> <!-- contentを書き換える -->
+
+  <meta property="fb:app_id" content="1025731387449767"> <!-- contentを書き換える: https://developers.facebook.com/apps/ で登録 -->
+
+  <meta property="twitter:card" content="summary_large_image"> <!-- contentを書き換える: いろいろある。このあたりを参照 https://dev.twitter.com/cards/overview -->
+  <meta property="twitter:title" content="Twitterタイトルはソーシャルボタンまとめ"> <!-- contentを書き換える -->
+  <meta property="twitter:description" content="Summary Cardのdescriptionです。ソーシャルボタンについてのまとめデモページです。"> <!-- contentを書き換える -->
+  <meta property="twitter:image" content="http://butchi.github.io/social-button-matome/ogp.png"> <!-- contentを書き換える -->
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,18 +44,18 @@
 
   <div class="wrapper">
     <main>
-      <ul>
-        <li>
+      <ul class="list-share">
+        <li class="item facebook">
           <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
         </li>
-        <li>
+        <li class="item twitter">
           <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </li>
-        <li>
+        <li class="item hatena">
           <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
         </li>
-        <li>
+        <li class="item line">
           <span>
           <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
           <script type="text/javascript">
